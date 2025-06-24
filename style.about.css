@@ -1,0 +1,195 @@
+
+
+/* ===== bodyの基本設定 ===== */
+body {
+  margin: 0;
+  padding-top: 80px; /* ★固定ヘッダーにコンテンツが隠れないようにする重要な指定です★ */
+  font-family: sans-serif;
+  background-color: #f0f2f5; /* サイト全体の背景に少し色をつけると見やすいです(お好みで) */
+}
+
+/* ===== 全体のリンクの基本スタイル ===== */
+a {
+  text-decoration: none; /* 基本的にリンクの下線は消しておきます */
+  color: inherit; /* 親要素の色を継承するようにします */
+}
+
+
+/* ===== ヘッダー全体 ===== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.headerInner {
+  max-width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo-image {
+  height: 40px;
+  width: auto;
+}
+
+.gnav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.gnav-list a {
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+
+/* ===== ページのタイトルセクション ===== */
+.page-title-section {
+  background-color: #ffffff;
+  padding: 100px 30px;
+  text-align: center;
+  margin-bottom: -1px; /* 説明文のコンテナとぴったり繋がるように */
+}
+
+.hero-english-title {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 42px;
+  font-weight: normal;
+  color: #222;
+  margin: 0 0 20px 0;
+}
+
+.hero-japanese-tagline {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+/* ★★★ここが最重要ポイントです！★★★ */
+/* 文章を中央に、美しく配置するためのスタイル */
+.description-container {
+  background-color: #ffffff; /* タイトル部分と背景色を合わせます */
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px 40px; /* 上下左右に余白 */
+  line-height: 2;
+  letter-spacing: 0.05em;
+  font-size: 16px;
+  color: #333;
+}
+
+
+/* ===== 会社概要テーブル ===== */
+.profile-table {
+  max-width: 900px;
+  margin: 80px auto;
+  border-top: 1px solid #e9e9e9;
+  font-size: 16px;
+  background-color: #ffffff;
+  padding: 0 20px;
+}
+
+.profile-table dl {
+  margin: 0;
+}
+
+.profile-row {
+  display: flex;
+  padding: 30px 10px;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.profile-row dt {
+  flex-basis: 180px;
+  flex-shrink: 0;
+  font-weight: bold;
+  color: #0d2c54;
+}
+
+.profile-row dd {
+  flex: 1;
+  margin: 0;
+  line-height: 1.8;
+  position: relative;
+  padding-left: 20px;
+}
+
+.profile-row dd::before {
+  content: ":";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
+/* ===== フッター ===== */
+.footerInner {
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 80px;
+  color: #777;
+  background-color: #ffffff;
+}
+
+.company-info p {
+  margin: 5px 0;
+}
+
+/* ===== SNSリンク ===== */
+.sns-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.sns-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 25px;
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.sns-button:hover {
+  opacity: 0.8;
+  transform: translateY(-3px);
+}
+
+.sns-button .fa-brands {
+  font-size: 20px;
+}
+
+.twitter {
+  background-color: #000000;
+}
+
+.facebook {
+  background-color: #1877F2;
+}
