@@ -1,0 +1,218 @@
+/* ===== bodyの基本設定 ===== */
+body {
+  margin: 0;
+  padding-top: 80px; /* 固定ヘッダーの高さ分 */
+  font-family: sans-serif;
+}
+
+/* ===== リンクの基本スタイル ===== */
+a {
+  text-decoration: none; /* ★すべてのリンクの下線を基本的に非表示にしました★ */
+  color: inherit; /* 親要素の色を継承 */
+}
+
+/* ===== ヘッダー全体 ===== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.headerInner {
+  max-width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo-image {
+  height: 40px;
+  width: auto;
+}
+
+.gnav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.gnav-list a {
+  color:black;
+  font-weight: bold;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+/* ===== 右側のグループ（会社名） ===== */
+.header-right {
+  /* ★コメントアウトのエラーを修正しました★ */
+}
+.title-logo {
+  color:black;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* ===== 投資哲学セクションのスタイル ===== */
+.philosophy-section {
+  background-color: #ffffff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.philosophy-subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0d2c54;
+  margin: 0 0 15px 0;
+}
+
+.philosophy-title {
+  font-size: 52px;
+  font-weight: 700;
+  color: #0d2c54;
+  line-height: 1.2;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.philosophy-divider {
+  width: 80%;
+  max-width: 650px;
+  height: 5px;
+  background-color: #0d2c54;
+  margin: 40px auto;
+}
+
+.philosophy-text {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 2;
+  color: #333333;
+}
+
+/* ===== 検索フォームのスタイル ===== */
+.search-form-container {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.form-controls {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 40px;
+  margin-bottom: 40px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  color: #0d2c54;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-size: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 10px;
+}
+
+.form-actions {
+  /* ここは特に指定なし */
+}
+
+.search-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #495057;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.search-button:hover {
+  background-color: #e9ecef;
+}
+
+/* ===== フッター ===== */
+.footerInner {
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 80px;
+  color: #777;
+  background-color: #ffffff;
+}
+.company-info p {
+  margin: 5px 0;
+}
+
+.sns-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.sns-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 25px;
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.sns-button:hover {
+  opacity: 0.8;
+  transform: translateY(-3px);
+}
+
+.sns-button .fa-brands {
+  font-size: 20px;
+}
+
+.twitter {
+  background-color: #000000;
+}
+
+.facebook {
+  background-color: #1877F2;
+}

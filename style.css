@@ -1,0 +1,130 @@
+/* ===== bodyの基本設定 ===== */
+body {
+  margin: 0;
+  padding-top: 80px; /* ヘッダーの高さ分 */
+  font-family: sans-serif; /* 念のためフォントを指定しておきます♡ */
+}
+
+/* ===== ヘッダー全体 ===== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== ヘッダーの中身のレイアウト ===== */
+.headerInner {
+  max-width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between; /* 左右のグループを両端に配置 */
+  align-items: center; /* 高さを中央揃え */
+}
+
+/* ===== 左側のグループ（ロゴ + ナビ） ===== */
+.header-left {
+  display: flex;
+  align-items: center; /* ロゴとナビの高さを中央で揃えます */
+  gap: 30px; /* ロゴとナビの間のスペース */
+}
+
+/* ===== ロゴ画像 ===== */
+.logo-image {
+  height: 40px; /* ロゴの高さを指定 */
+  width: auto; /* 幅は自動で調整されます */
+}
+
+/* ===== ナビゲーションメニュー ===== */
+.gnav-list {
+  display: flex; /* ★★★リストが重なるのを防ぎます★★★ */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px; /* メニュー項目の間のスペース */
+}
+
+.gnav-list a {
+  text-decoration: none;
+  color:black;
+  font-weight: bold;
+  font-size: 14px;
+  white-space: nowrap; /* メニューが改行しないようにします */
+}
+
+/* ===== 右側のグループ（会社名） ===== */
+.header-right {
+  color:black;
+  font-size: large;
+  /* 特に指定は不要です♡ 
+}*/
+a{
+  text-decoration:dashed;
+}
+/*.title-logo {
+  margin: 0; /* 不要な余白をリセット */
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+
+
+
+/* ===== メインコンテンツ部分 ===== */
+.Content {
+  background-color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* ===== フッター ===== */
+.footerInner {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  color: #777;
+
+}
+.resizeimage img { width: 100vw; }
+/* ===== SNSリンク ===== */
+.sns-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.sns-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 25px;
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.sns-button:hover {
+  opacity: 0.8;
+  transform: translateY(-3px);
+}
+
+.sns-button .fa-brands {
+  font-size: 20px;
+}
+
+.twitter {
+  background-color: #000000;
+}
+
+.facebook {
+  background-color: #1877F2;
+}
